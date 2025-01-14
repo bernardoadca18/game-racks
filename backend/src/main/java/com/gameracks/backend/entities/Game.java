@@ -36,10 +36,10 @@ public class Game {
     @Column(name = "img_url")
     private String imgUrl;
 
-    @Column(name = "short_description", length = 1023)
+    @Column(name = "short_description", length = 1023, columnDefinition = "TEXT")
     private String shortDescription;
 
-    @Column(name = "long_description", length = 8191)
+    @Column(name = "long_description", length = 8191, columnDefinition = "TEXT")
     private String longDescription;
 
     public Game() {
@@ -152,5 +152,4 @@ public class Game {
         Game other = (Game) obj;
         return Objects.equals(id, other.id);
     }
-
 }

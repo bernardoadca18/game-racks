@@ -1,33 +1,32 @@
 package com.gameracks.backend.dto;
 
 import com.gameracks.backend.entities.Game;
-import com.gameracks.backend.projections.GameMinProjection;
 
-public class GameMinDTO {
+public class GameDTO {
 
     private Long id;
     private String title;
+    private double score;
     private Integer year;
+    private String genre;
+    private String platforms;
     private String imgUrl;
     private String shortDescription;
+    private String longDescription;
 
-    public GameMinDTO() {
+    public GameDTO() {
     }
 
-    public GameMinDTO(Game entity) {
+    public GameDTO(Game entity) {
+        this.genre = entity.getGenre();
         this.id = entity.getId();
+        this.imgUrl = entity.getImgUrl();
+        this.longDescription = entity.getLongDescription();
+        this.platforms = entity.getPlatforms();
+        this.score = entity.getScore();
+        this.shortDescription = entity.getShortDescription();
         this.title = entity.getTitle();
         this.year = entity.getYear();
-        this.imgUrl = entity.getImgUrl();
-        this.shortDescription = entity.getShortDescription();
-    }
-
-    public GameMinDTO(GameMinProjection projection) {
-        this.id = projection.getId();
-        this.title = projection.getTitle();
-        this.year = projection.getYear();
-        this.imgUrl = projection.getImgUrl();
-        this.shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
@@ -46,12 +45,36 @@ public class GameMinDTO {
         this.title = title;
     }
 
+    public double getScore() {
+        return score;
+    }
+
+    public void setScore(double score) {
+        this.score = score;
+    }
+
     public Integer getYear() {
         return year;
     }
 
     public void setYear(Integer year) {
         this.year = year;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public String getPlatforms() {
+        return platforms;
+    }
+
+    public void setPlatforms(String platforms) {
+        this.platforms = platforms;
     }
 
     public String getImgUrl() {
@@ -68,6 +91,14 @@ public class GameMinDTO {
 
     public void setShortDescription(String shortDescription) {
         this.shortDescription = shortDescription;
+    }
+
+    public String getLongDescription() {
+        return longDescription;
+    }
+
+    public void setLongDescription(String longDescription) {
+        this.longDescription = longDescription;
     }
 
 }
