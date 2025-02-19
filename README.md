@@ -34,7 +34,9 @@ Game Racks is a RESTful API built with Spring Boot designed to manage and organi
 - Maven
 
 ## 🏗 Project Structure
+
 backend/ 
+
 ├── src/main/java/com/gameracks/backend/ │ 
 
 ├── controllers/ # REST API endpoints │ 
