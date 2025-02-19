@@ -1,5 +1,5 @@
 <div align="center">
-
+[English](README.md) | [Português](README.pt-br.md)
 # 🎮 Game Racks
 A Modern Game Collection Management API
 
