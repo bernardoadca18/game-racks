@@ -155,6 +155,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Created by bernardoadca18 - GitHub Profile
 
 Project Link: https://github.com/bernardoadca18/game-racks
-
-
-This README provides a comprehensive overview of your game-racks project, highlighting its features, technology stack, and setup instructions. It maintains a professional structure while providing all necessary information for development and deployment. The documentation is based on the actual codebase structure and configurations present in your repository.
